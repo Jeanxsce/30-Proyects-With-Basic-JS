@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86679d70fd.js" crossorigin="anonymous"></script>
+    <title>Berserk Page and Dark Mode</title>
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Hire me</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Guts</span> Berserk</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, explicabo officia<br> Repudiandae ea
+                architecto ipsa harum quidem?
+            </p>
+            <a href="">Berserk</a>
+        </div>
+
+        <div class="img-box">
+            <img src="images/black.png" class="back-img">
+            <img src="images/berserkpng.png" class="main-img">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-regular fa-snowflake"></i></a>
+            <a href=""><i class="fa-brands fa-medium"></i></i></a>
+        </div>
+    </div>
+
+    <script>
+
+        let icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
